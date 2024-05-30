@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logoicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header>
+        <div class="header-container">
+          <div class="logo-container">
+            <h1 class="logo-text">Charlie<span class="dev-text">.dev</span></h1>
+          </div>
+          <nav class="nav-container">
+            <ul class="list-items">
+              <li class="nav-links"><a href="#home-hero-section">Home</a></li>
+              <li class="nav-links" id="about-me-link">
+                <a href="#about-me-container">About</a>
+              </li>
+              <li class="nav-links"><a href="#project-link">Projects</a></li>
+              <li class="nav-links"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <div class="hero-section-container" id="home-hero-section">
+        <div class="content">
+          <div class="hero-text-container">
+            <h2 class="pos-text">
+              Front-End Web Developer
+              <img
+                src="images/hand.png"
+                alt="wave hand"
+                class="wave-hand-icon"
+              />
+            </h2>
+            <p class="des-text" id="des-text">
+              "Hi! I'm Charlie Sumalag. A passionate Front-end Web Developer,
+              based in the Philippines."
+              <i class="fa-sharp fa-solid fa-map-pin pin-icon"></i>
+            </p>
+            <div class="other-details-container">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+              <img class="cv" src="images/cv.png" alt="cv" />
+            </div>
+            <div class="tech-stack-container">
+              <p class="tech-stack-text">Tech Stack</p>
+              <span class="ver-line"></span>
+              <div class="stack-icon-container">
+                <i class="fa-brands fa-html5 html-icon"></i>
+                <i class="fa-brands fa-css3-alt css-icon"></i>
+                <i class="fa-brands fa-js js-icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero-picture-container"></div>
+        </div>
+      </div>
+      <!-- About Me Section -->
+      <div class="about-me-main-container" id="about-me-container">
+        <h2 class="section-header-text about-me-text">
+          about me
+          <span class="line"></span>
+        </h2>
+
+        <div class="about-content">
+          <div class="about-me-container">
+            <div class="my-image-container">
+              <img
+                src="images/hero-picture.jpg"
+                class="profile-pic"
+                alt="charlie sumalag"
+              />
+            </div>
+            <div class="about-me-text-container">
+              <h3 class="about-me-pos">A Passionate Front-End Web Developer</h3>
+              <p class="about-me-par">
+                "I began my journey into web development and programming when I
+                was a first-year student pursuing a Bachelor of Science in
+                Information Technology. I feel that coding is my passion because
+                I truly love learning new things. Exploring the intricacies of
+                programming languages and the endless possibilities they offer
+                ignites my curiosity and drives me to continually improve my
+                skills. With each new concept mastered and project completed, I
+                find a deep sense of fulfillment and satisfaction, fueling my
+                determination to excel in this field."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects -->
+      <div class="project-main-container" id="project-link">
+        <h2 class="section-header-text">
+          PROJECTS
+          <span class="line"></span>
+        </h2>
+        <div class="projects">
+          <div class="quiz-web-app-container">
+            <img
+              src="images/simple-quiz-web-app.png"
+              alt="simple quiz web application"
+              class="web-app"
+            />
+          </div>
+          <div class="pro-des-container">
+            <h3 class="project-title">Simple Quiz Web Application</h3>
+            <p class="project">
+              Introducing a dynamic web application designed to engage users in
+              rapid-fire quizzes! With a built-in timer set to 15 seconds per
+              question, users are prompted to respond swiftly. After each
+              answer, the score is immediately revealed, fostering a competitive
+              spirit and encouraging repeated plays. This interactive experience
+              is perfect for trivia enthusiasts seeking a fast-paced challenge.
+              Showcase your quick thinking and knowledge prowess with this
+              addictive and entertaining web app, sure to captivate visitors on
+              any platform.
+            </p>
+            <div class="btn-projects">
+              <div class="live-demo-container">
+                <a
+                  href="https://charliesumalag.github.io/SIMPLE-QUIZ-WEB-APP/"
+                  target="”_blank”"
+                >
+                  <button class="live-demo">Live Demo</button>
+                  <i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square live-demo-icon"
+                  ></i>
+                </a>
+              </div>
+              <div class="code-container">
+                <a
+                  href="https://github.com/charliesumalag/SIMPLE-QUIZ-WEB-APP.git"
+                  target="_blank"
+                >
+                  <button class="code">Code</button>
+                  <i class="fa-brands fa-github github-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="contact-main-container" id="contact">
+        <h2 class="section-header-text">
+          Get In Touch
+          <span class="line"></span>
+        </h2>
+        <div class="contact-content">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30888.35617761442!2d120.95896027657987!3d14.596538927452526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1715541428963!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-form-container">
+            <form action="" class="form">
+              <h3 class="send-message-text">Send Message</h3>
+              <div class="input-box">
+                <input type="text" name="" placeholder="Full Name" required />
+                <!-- <span>Full Name</span> -->
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Email" name="" required />
+              </div>
+              <div class="input-box">
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Your Message. . . "
+                  required
+                ></textarea>
+              </div>
+              <div class="input-box">
+                <input
+                  type="submit"
+                  name=""
+                  value="Send"
+                  required
+                  class="submit"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Foooter -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <p>Copyright &copy; 2024. All rights are reserved</p>
+          </div>
+          <div class="footer-links">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
