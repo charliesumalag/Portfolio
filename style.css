@@ -30,10 +30,14 @@ body {
   color: var(--med-imp-text-color);
   font-family: "Poppins", sans-serif;
   width: 100%;
-  height: 100vh;
+
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   position: relative;
+}
+.container {
+  width: 100%;
+  border: 1px solid green;
 }
 li,
 a {
@@ -42,13 +46,6 @@ a {
   color: var(--med-imp-text-color);
   font-weight: 600;
   cursor: pointer;
-}
-.container {
-  width: 100%;
-}
-
-a:hover {
-  color: #001e4d;
 }
 
 /* --header section */
@@ -60,6 +57,7 @@ header {
   display: flex;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  z-index: 9999;
 }
 .header-container {
   width: 144rem;
@@ -82,6 +80,33 @@ header {
 .list-items {
   display: flex;
   gap: 2rem;
+}
+.nav-links {
+  position: relative;
+}
+.nav-links::after {
+  content: "";
+  bottom: 0;
+  /* margin-top: 1rem; */
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  background-color: var(--most-imp-text-color);
+  transition: 0.4s all ease-in-out;
+  border: none;
+  outline: none;
+}
+.nav-links:hover:after {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  width: 60%;
+  height: 0.2rem;
+  background-color: var(--most-imp-text-color);
 }
 .section-header-text {
   text-align: center;
@@ -114,7 +139,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  /* border: 1px solid red; */
 }
 .hero-text-container {
   display: flex;
@@ -270,6 +294,7 @@ header {
 .web-app {
   width: 45rem;
   height: 45rem;
+  border-radius: 1rem;
 }
 .project {
   font-size: 1.6rem;
@@ -311,7 +336,7 @@ header {
   display: grid;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 0;
+  padding: 15rem 0;
   place-content: center;
 }
 .contact-content {
